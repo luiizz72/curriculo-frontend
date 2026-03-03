@@ -1,7 +1,19 @@
+/* ===== BODY CENTRALIZADO ===== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centro horizontal */
+  justify-content: center; /* centro vertical */
+}
+
+/* ===== LINHA COM TÍTULO ===== */
 .linha-titulo {
   display: flex;
   align-items: center;
+  justify-content: center; /* centraliza conteúdo */
   width: 100%;
+  max-width: 600px; /* controla largura */
   margin: 20px 0;
 }
 
@@ -10,22 +22,24 @@
   content: "";
   flex: 1;
   height: 2px;
-  background-color: #000; /* cor da linha */
+  background-color: #000;
 }
 
 .linha-titulo span {
   margin: 0 12px;
   font-weight: bold;
   white-space: nowrap;
+  text-align: center;
 }
 
+/* ===== BOTÃO LINKEDIN ===== */
 .btn-linkedin {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 12px 26px;
-  background: #0a66c2; /* azul LinkedIn */
-  color: white;
+  background: #0a66c2;
+  color: #fff;
   text-decoration: none;
   font-weight: 600;
   font-size: 16px;
@@ -34,6 +48,11 @@
   box-shadow: 0 4px 10px rgba(10, 102, 194, 0.3);
   border: none;
   cursor: pointer;
+}
+
+/* centraliza o botão */
+.btn-linkedin {
+  margin: 0 auto;
 }
 
 .btn-linkedin:hover {
@@ -46,10 +65,35 @@
   transform: scale(0.96);
 }
 
-
-/*Tudo na mesma linha*/
-.linha{
+/* ===== TUDO NA MESMA LINHA ===== */
+.linha {
   display: flex;
-  align-items: center;   /* alinha verticalmente */
-  gap: 15px;             /* espaço entre itens */
+  align-items: center;
+  justify-content: center; /* centraliza */
+  gap: 15px;
+}
+
+/* ===== ÍCONES CONTATO ===== */
+.contatos {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centraliza */
+  gap: 15px;
+}
+
+/* centraliza bloco de contatos */
+.contatos {
+  margin: 0 auto;
+}
+
+/* ÍCONES */
+.icon img {
+  width: 40px;
+  height: 40px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.icon img:hover {
+  transform: scale(1.15);
 }
